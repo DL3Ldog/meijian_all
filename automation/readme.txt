@@ -1,1 +1,2 @@
-你好啊
+注意python版本为3
+配置好webdriver环境
