@@ -51,6 +51,8 @@ def run_case():
         '''
         for i in range(len(actuator)):
             os.system('python3 {}'.format(os.path.join("../actuator", actuator[i])))
+            '''注意区分执行命令配置'''
+            # os.system('python {}'.format(os.path.join("../actuator", actuator[i])))
         try:
             opt = webdriver.ChromeOptions()
             # 把chrome设置成无界面模式，不论windows还是linux都可以，自动适配对应参数

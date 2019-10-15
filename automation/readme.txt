@@ -1,2 +1,3 @@
 注意python版本为3
 配置好webdriver环境
+log和report需要定时手动清理
