@@ -50,9 +50,15 @@ def run_case():
                         logger.debug(e)
         '''
         for i in range(len(actuator)):
-            os.system('python3 {}'.format(os.path.join("../actuator", actuator[i])))
-            '''注意区分执行命令配置'''
-            # os.system('python {}'.format(os.path.join("../actuator", actuator[i])))
+            try:
+                os.system('python3 {}'.format(os.path.join("../actuator", actuator[i])))
+                '''注意区分执行命令配置'''
+                # os.system('python {}'.format(os.path.join("../actuator", actuator[i])))
+                print('当前执行器为：%s' % actuator[i])
+            except Exception as e:
+                logger.debug("执行器执行失败，找不到对应执行器")
+                logger.error(e)
+                print(e)
         try:
             opt = webdriver.ChromeOptions()
             # 把chrome设置成无界面模式，不论windows还是linux都可以，自动适配对应参数

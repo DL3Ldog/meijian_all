@@ -2,7 +2,7 @@
 import time
 
 #定义需要跑的执行器actuator = []
-actuator = ['search_actuator.py']
+actuator = ['search_actuator.py','tmp_api_actuator.py']
 
 # from config.case_config.config import actuator
 #报告存储路径

@@ -6,7 +6,7 @@ from common import HTMLTestReportCN
 print(os.path.dirname(os.path.realpath(__file__)))
 #执行器执行的case的工程
 # path = '../case/web'
-path = ['../case/demo_project']
+path = ['../case/tms/']
 
 for i in range(len(path)):
     all_cases = unittest.TestLoader().discover(path[i], pattern='*.py')
