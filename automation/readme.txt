@@ -1,3 +1,4 @@
 注意python版本为3
+windows环境run文件中的 python3改为python 参照cmd中唤起python的命令
 配置好webdriver环境
 log和report需要定时手动清理
